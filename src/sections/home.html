@@ -1,3 +1,266 @@
-<div>
-    <!-- Your HTML Code Goes Here -->
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Journal</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <style>
+    /* Add your CSS here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  
+    }
+
+    /* .hero-section {
+        text-align: center;
+        padding: 50px;
+        background: rgb(255, 243, 242);
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+      } */
+    /* Base styles */
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(255, 243, 242);
+      padding-left: 185px;
+      height: 650px;
+      overflow: hidden;
+      font-weight: inherit;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+    .left {
+      flex: 1;
+    }
+   .right{
+    flex: 0 0 50%;
+    padding-right: 140px;
+    padding-top: 30px;
+   }
+   .box{
+    width: 580px;
+    height: 400px;
+    margin-left: 16px;
+    margin-bottom: -30px;
+    border: 1px solid rgba(9, 9, 9, 0.168);
+   }
+   .right img{
+    width:580px;
+    height: 400px;
+    margin-top: -700px;
+   }
+    .header {
+      font-size: 2.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+
+    img {
+      width: 400px;
+      height: 300px;
+    }
+
+    .left {
+      flex-grow: 1;
+      padding-right: 20px;
+    }
+
+    .right {
+      flex-shrink: 0;
+    }
+
+    .features {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .feature {
+      flex-basis: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .feature-icon {
+      background: #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .feature-icon i {
+      font-size: 1.5rem;
+    }
+
+    .feature-icon svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (max-width: 768px) {
+  .hero-section {
+    padding:10px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: auto; 
+     /* margin-left: -40px;  */
+    box-sizing: border-box;
+  }
+
+  .feature {
+    flex-basis: calc(75% - 5px);
+    text-align: left;
+  }
+  .right{
+    padding-left: -40px;
+  }
+
+  .left,
+  .right {
+    width: 80%; 
+    padding-left: 90px; 
+    padding-bottom: 200px;
+  }
+  .left{
+    margin-left: -40px;
+  }
+
+  .right img {
+    /* margin-top: -140px; */
+    margin: -140px 0px -140px 0px;
+    margin-left:30px; 
+    position: relative; 
+    display: block; 
+    max-width: 100%;
+    z-index: 1; 
+  }
+
+  .box {
+    width: 374px;
+    height: 400px;
+    margin: 0 auto; 
+    border: 1px solid black;
+    position: relative; 
+    z-index: 0; 
+    margin:50px;
+    display: none;
+    
+  }
+}
+
+
+  
+  </style>
+</head>
+
+<body>
+
+  <div class="hero-section">
+    <div class="left">
+      <h1 class="header">
+        Your private <br />
+        100% customizable<br />
+        online journal.
+      </h1>
+      <p>Loved by over 2 million journalers around the world.</p>
+      <button>Start your free journal now <i class="fas fa-arrow-right "></i></button>
+    </div>
+    <div class="right">
+      <div class="box"></div>
+      <img class="coverimage" src="penzu-clone.webp" alt="img" />
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon"> <i class="fas fa-file"></i></div>
+
+        <h2>Unlimited entries</h2>
+        <p>
+          Unlike other journaling platforms, you <br />
+          can write as much and as often as you <br />
+          like, all for free.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h2>Mobile Apps</h2>
+        <p>
+          You can write in your journal when not <br />at your computer with
+          our iOS and<br />Android apps.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-thumbs-up"></i></i></div>
+        <h2>Saves as you go</h2>
+        <p>
+          Never worry about losing your work —<br />Penzu saves as you type at
+          your<br />computer or on the go.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+
+        <h2>Custom journals</h2>
+        <p>
+          Choose different covers, backgrounds,<br />fonts and more for each
+          of your<br />journals and entries.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+        <h2>Reminders</h2>
+        <p>
+          Set daily, weekly or custom reminders<br />to ensure that you never
+          forget to<br />write in your journal.
+        </p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="far fa-heart"></i></div>
+        <h2>So much more...</h2>
+        <p>
+          Enjoy unlimited devices, encryption,<br />tagging, search, prompts,
+          journal and<br />entry locking, entry sharing and more.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
