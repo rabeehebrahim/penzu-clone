@@ -170,6 +170,6 @@ a {
     margin-top: 50px;
   }
   .container {
-    height: fit-content;
+    height: max-content;
   }
 }
